@@ -12,4 +12,6 @@
 
 ## TO DO
 
-(em breve)
+* ~~Concluir o conteúdo das aulas~~
+* Melhorias:
+    * (em breve)
