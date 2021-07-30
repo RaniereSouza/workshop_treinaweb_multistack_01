@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load easy_mask %}
+
+{% block estilo %}
+  <style>
+    table {
+      margin: 0 auto;
+      float: none;
+    }
+
+      table thead {
+        background-color: #dfdfdf;
+        border: 1px solid #dfdfdf;
+      }
+
+      table tbody tr {
+        background-color: #fff;
+        border: 1px solid #fff;
+      }
+
+        table tbody tr:nth-of-type(even) {
+          background-color: #ececec;
+          border: 1px solid #ececec;
+        }
+
+        table tbody tr:hover {
+          border-left: 1px solid #a0a0a0;
+          border-right: 1px solid #a0a0a0;
+          z-index: 2;
+        }
+
+          table tbody tr:hover td {
+            border-top: 1px solid #a0a0a0;
+            border-bottom: 1px solid #a0a0a0;
+          }
+
+      table th,
+      table td {
+        padding: 5px 10px;
+      }
+
+        table td a {
+          padding: 5px 10px;
+        }
+  </style>
+{% endblock estilo %}
+
+{% block conteudo %}
+  <table class="col-md-12">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>CEP</th>
+        <th class="text-center">Ações</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for diarista in diaristas %}
+        <tr>
+          <td>{{diarista.id}}</td>
+          <td>{{diarista.nome_completo}}</td>
+          <td>{{diarista.email}}</td>
+          <td>{{diarista.cep | cep}}</td>
+          <td class="text-center">
+            <a href="{% url 'editar_diarista' diarista.id %}" class="btn btn-outline-primary btn-sm">Editar</a>
+            <a href="{% url 'remover_diarista' diarista.id %}" class="btn btn-outline-danger btn-sm">Remover</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <br>
+  <a href={% url 'cadastrar_diarista' %} class="btn btn-outline-success">Cadastrar</a>
+{% endblock conteudo %}

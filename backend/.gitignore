@@ -1,0 +1,4 @@
+/venv
+/ediaristas_workshop/media/*
+/ediaristas_workshop/**/__pycache__/
+/ediaristas_workshop/**/*.sqlite3

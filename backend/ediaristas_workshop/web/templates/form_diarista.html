@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block estilo %}
+  <style>
+    form {
+      display: block;
+      float: none;
+      margin: 0 auto;
+      padding: 10px 15px;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+    }
+
+      form div.form-group {
+        margin-bottom: 10px;
+      }
+
+        form div.form-group:last-of-type {
+          margin-bottom: 0;
+        }
+
+        form div.form-group label {
+          margin-bottom: 5px;
+        }
+
+      form button {
+        width: 75%;
+        margin: 30px auto 0 auto;
+        float: none;
+      }
+  </style>
+{% endblock estilo %}
+
+{% block conteudo %}
+  <form method="POST" enctype="multipart/form-data" class="col-md-5">
+    {% csrf_token %}
+    {{diarista_form | crispy}}
+    <button type="submit" class="btn btn-success d-block">Cadastrar</button>
+  </form>
+{% endblock conteudo %}
