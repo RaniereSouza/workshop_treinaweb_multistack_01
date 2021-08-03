@@ -1,17 +1,19 @@
 # Aplicativo Móvel com [React Native](https://reactnative.dev/) e [Expo](https://expo.dev/) para Plataforma de Clientes
-
 [status: a concluir]
 
-## Ambiente e Requisitos
+___
 
-(em breve)
+## Ambiente e Requisitos
+(Em breve)
+
+___
 
 ## Rodando o Projeto
+(Em breve)
 
-(em breve)
+___
 
 ## TO DO
-
 * Concluir o conteúdo das aulas
 * Melhorias:
-    * (em breve)
+    * (Em breve)

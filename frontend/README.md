@@ -1,17 +1,19 @@
 # Front-End com [React](https://reactjs.org/) e [Next](https://nextjs.org/) para Site dos Clientes
-
 [status: concluído o conteúdo das aulas]
 
-## Ambiente e Requisitos
+___
 
-(em breve)
+## Ambiente e Requisitos
+(Em breve)
+
+___
 
 ## Rodando o Projeto
+(Em breve)
 
-(em breve)
+___
 
 ## TO DO
-
 * ~~Concluir o conteúdo das aulas~~
 * Melhorias:
-    * (em breve)
+    * (Em breve)

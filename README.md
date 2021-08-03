@@ -1,9 +1,9 @@
 # Workshop [TreinaWeb](https://www.treinaweb.com.br/) Multi-Stack (09/06/2021 à 20/06/2021)
-
 Código desenvolvido durante o workshop para estudar as tecnologias ensinadas nas aulas, usando o projeto de estudo de caso sugerido no workshop como aplicação dos conceitos aprendidos.
 
-## Estudo de caso
+___
 
+## Estudo de caso
 * **Nome do projeto:** e-Diaristas
 * **Descrição:** O e-Diaristas é (o mockup de) uma plataforma de profissionais de limpeza e organização de imóveis, onde estes serão cadastrados para que clientes possam encontrá-los e contratá-los.
 * **Tecnologias do projeto:**
