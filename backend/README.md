@@ -36,11 +36,13 @@ ___
     * Observação: num projeto em branco, para iniciar um novo  projeto do Django, use o comando `django-admin startproject <nome do projeto>`; e para criar aplicações dentro desde projeto Django, navegue para dentro da pasta criada e use o comando `python manage.py startapp <nome da aplicação>`
 * Execute as migrations do banco de dados com o comando `python manage.py migrate`
 * Inicie o servidor com o comando `python manage.py runserver`
+* Acesse "localhost:8000" no seu browser: seu site administrativo já estará rodando (na URL "/web", com a primeira página chamada "/listar_diaristas", no caminho completo "localhost:8000/web/listar_diaristas"); Basta então cadastrar alguns diaristas, para que seus dados sejam exibidos no front-end
+    * Observação: os dados do back-end estão expostos para o front-end à partir da URL "/api" em "localhost:8000" (exemplo: o método GET "/diaristas_cidade", com caminho completo "localhost:8000/api/diaristas_cidade?cep=\<CEP passado pelo usuário\>", retorna as diaristas na mesma cidade que o CEP do parâmetro, em formato JSON)
 
 ___
 
 ## TO DO
 * ~~Concluir o conteúdo das aulas~~
 * Melhorias:
-    * Documentar o setup do ambiente e tudo que é necessário para rodar o projeto
+    * ~~Documentar o setup do ambiente e tudo que é necessário para rodar o projeto~~
     * (Mais em breve)
