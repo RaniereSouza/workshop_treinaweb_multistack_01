@@ -16,4 +16,5 @@ ___
 ## TO DO
 * ~~Concluir o conteúdo das aulas~~
 * Melhorias:
-    * (Em breve)
+    * Documentar o setup do ambiente e tudo que é necessário para rodar o projeto
+    * (Mais em breve)

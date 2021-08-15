@@ -32,12 +32,15 @@ Caso seu projeto já contenha um arquivo "requirements.txt", ao invés de instal
 ___
 
 ## Rodando o Projeto
-(Em breve)
+* Navegue para dentro da pasta do projeto Django (no caso deste repositório, a pasta chamada "ediaristas_workshop" na raiz do back-end)
+    * Observação: num projeto em branco, para iniciar um novo  projeto do Django, use o comando `django-admin startproject <nome do projeto>`; e para criar aplicações dentro desde projeto Django, navegue para dentro da pasta criada e use o comando `python manage.py startapp <nome da aplicação>`
+* Execute as migrations do banco de dados com o comando `python manage.py migrate`
+* Inicie o servidor com o comando `python manage.py runserver`
 
 ___
 
 ## TO DO
 * ~~Concluir o conteúdo das aulas~~
 * Melhorias:
-    * ~~Instalar as dependências em ambiente virtual ao invés de globalmente~~
+    * Documentar o setup do ambiente e tudo que é necessário para rodar o projeto
     * (Mais em breve)
