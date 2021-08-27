@@ -39,6 +39,18 @@ ___
 * Acesse "localhost:8000" no seu browser: seu site administrativo já estará rodando (na URL "/web", com a primeira página chamada "/listar_diaristas", no caminho completo "localhost:8000/web/listar_diaristas"); Basta então cadastrar alguns diaristas, para que seus dados sejam exibidos no front-end
     * Observação: os dados do back-end estão expostos para o front-end à partir da URL "/api" em "localhost:8000" (exemplo: o método GET "/diaristas_cidade", com caminho completo "localhost:8000/api/diaristas_cidade?cep=\<CEP passado pelo usuário\>", retorna as diaristas na mesma cidade que o CEP do parâmetro, em formato JSON)
 
+Ao rodar o projeto no Windows, para que algumas dependências dentro do projeto sejam corretamente enxergadas pelo Visual Studio Code, talvez seja necessário adicionar um arquivo "settings.json" dentro de uma pasta ".vscode" na raiz do projeto, com o seguinte conteúdo:
+```
+{
+    "python.pythonPath": "/venv/Scripts/python.exe",
+    "python.autoComplete.extraPaths": [
+        "./backend",
+        "./backend/ediaristas_workshop/ediaristas_workshop",
+        "./backend/ediaristas_workshop/web",
+        "./backend/ediaristas_workshop/api"
+    ]
+}
+```
 ___
 
 ## TO DO
